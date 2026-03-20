@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hackerhouse Map</title>
+    <script type="module" crossorigin src="/assets/index-_z04kTYs.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BjRnBDXA.css">
+  </head>
+  <body>
+    <section id="globeViz" aria-label="Hackerhouse globe"></section>
+
+    <div class="ui-top-left">
+      <p class="logo">Hackerhouse Map</p>
+      <input
+        id="searchInput"
+        type="search"
+        placeholder="Search city, house or focus"
+        autocomplete="off"
+      />
+    </div>
+
+    <aside id="houseDetails" class="house-details" aria-live="polite" aria-label="Selected hackerhouse details">
+      <div id="houseDetailsEmpty" class="house-details-empty">
+        <p class="house-details-label">Discover</p>
+        <h2>Select a Hacker House</h2>
+        <p>Click any marker to view its title, bio, and quick info.</p>
+      </div>
+
+      <article id="houseDetailsCard" class="house-details-card" hidden>
+        <div class="house-details-head">
+          <p id="houseRegion" class="house-region"></p>
+          <button id="houseDetailsClose" type="button" class="house-details-close" aria-label="Close details">
+            Close
+          </button>
+        </div>
+        <div class="house-title-row">
+          <img id="houseTitleFavicon" class="house-title-favicon" alt="" aria-hidden="true" hidden />
+          <h2 id="houseTitle"></h2>
+        </div>
+        <p id="houseLocation" class="house-location"></p>
+        <p id="houseBio" class="house-bio"></p>
+
+        <dl class="house-meta">
+          <div>
+            <dt>Focus</dt>
+            <dd id="houseFocus"></dd>
+          </div>
+          <div>
+            <dt>Status</dt>
+            <dd id="houseStatus"></dd>
+          </div>
+        </dl>
+
+        <div class="house-marker-customizer">
+          <label for="markerModelSelect" class="house-marker-label">Map Marker</label>
+          <select id="markerModelSelect" class="house-marker-select" aria-label="Choose marker model"></select>
+        </div>
+
+        <a id="houseVisitSite" class="house-visit-site" href="#" target="_blank" rel="noopener noreferrer">Visit Site</a>
+      </article>
+    </aside>
+
+    <p class="credit"><a target="_blank" href="https://vic.ceo" style="color: inherit; text-decoration: none;">Made by Vic Giurgiu</a></p>
+
+  </body>
+</html>
