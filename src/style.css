@@ -247,6 +247,43 @@ body {
   color: #9eb1d3;
 }
 
+.github-star-button {
+  position: fixed;
+  left: 12px;
+  bottom: 10px;
+  z-index: 11;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  border: 1px solid rgba(173, 191, 234, 0.44);
+  background: rgba(9, 14, 28, 0.86);
+  color: #ffd782;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  transition: border-color 0.16s ease, transform 0.16s ease, color 0.16s ease;
+}
+
+.github-star-button:hover {
+  border-color: rgba(255, 222, 144, 0.85);
+  color: #ffe8ad;
+  transform: translateY(-1px);
+}
+
+.github-star-button:focus-visible {
+  outline: 2px solid rgba(255, 222, 144, 0.9);
+  outline-offset: 2px;
+}
+
+.github-star-icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
 .point-tip {
   font-size: 12px;
   line-height: 1.35;
@@ -267,7 +304,11 @@ body {
 
   .credit {
     bottom: 8px;
-    left: 12px;
-    right: auto;
+    right: 12px;
+    left: auto;
+  }
+
+  .github-star-button {
+    bottom: 8px;
   }
 }
