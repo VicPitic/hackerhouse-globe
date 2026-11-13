@@ -1076,5 +1076,5 @@ export const HACKERHOUSES = [
     "status": "Active",
     "website": "https://localhosthq.com",
     "summary": "Localhost San Francisco in San Francisco, focused on Hardware and AI."
-  }
+  }, { "id": "soti-house-barcelona", "name": "SOTI House", "city": "Barcelona", "country": "Spain", "region": "Europe", "lat": 41.3874, "lng": 2.1686, "focus": "Community, Founders, AI, Startups", "capacity": null, "status": "Active", "website": "https://www.soti.house/hacker-house", "summary": "SOTI House is a one-week hacker house for builders and founders in Europe and beyond. Small groups live and build together for a week. Past editions include Taranto, Barcelona, Valencia and San Francisco." }
 ];
